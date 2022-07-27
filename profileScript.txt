@@ -1,4 +1,21 @@
+
+0. not sure but maybe need to install this first 
+winget install JanDeDobbeleer.OhMyPosh
+
+1. install this modules with powershell as adminstrator
+Install-Module -Name posh-git -Repository PSGallery
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+2. type in powershell -> notepad $PROFILE when notepad open paste below script and save
+
 Import-Module -Name Terminal-Icons
 Import-Module posh-git
-Import-Module oh-my-posh
 oh-my-posh --init --shell pwsh --config ~/armo.omp.json | Invoke-Expression
+
+3. unzip CascadiaCode.zip and install all the fonts
+
+4. in windows terminal open settings, select powershell core, go to Appearance, select font face "CaskaydiaCove Nerd Font"
+
+5. copy to C:\Users\YOUR_USER_NAME script armo.omp.json
+
+6. restart windows terminal
